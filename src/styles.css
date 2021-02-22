@@ -1,0 +1,299 @@
+
+* {
+	/*font-family: 'Josefin Sans', sans-serif;*/
+}
+
+body {
+  background: url("img/air.jpg") no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;/*
+  background-color:rgba(255, 255, 255, 0.6);*/
+}
+
+
+.wrapper {
+  width: 60vw;
+  height: 70vh;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, .2); 
+  border-radius: 35px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  display: grid;
+}
+
+.wrapper:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 1000px 100px rgb(0 0 0 / 50%) inset;
+  filter: blur(4px);
+  border-radius: 35px;
+}
+
+.wrapper.green:before {
+  box-shadow: 0 0 1000px 100px rgb(0 255 0 / 50%) inset;
+}
+
+/* --------------- SEARCH PAGE ---------------- */
+
+div #selector {
+  z-index: 2;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  grid-area: 1/1;
+}
+
+div #selector.active {
+  visibility: hidden;
+  opacity: 0;
+}
+
+div #selector h1 {
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1% 5% 5% 5%;
+    font-size: 3.5em;
+}
+
+div #selector input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin: 1em 10em;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 16px 16px 0px 0px;
+}
+
+div #selector button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin: 1em 10em;
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 0px 0px 16px 16px;
+    border-bottom: 3px solid #2a2a2a;
+
+}
+
+div #selector button:active {
+  border-bottom: 1px solid #2a2a2a;
+
+}
+
+/* --------------- INFORMATION PAGE ---------------- */
+
+div #information {
+  z-index: 2;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  overflow: hidden; 
+  opacity: 0;
+  align-items: center;
+  grid-area: 1/1;
+  
+}
+
+div #information h1 {
+
+}
+
+div #information.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+div #information button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin: 1em 10em;
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #2a2a2a;
+}
+
+div #information button:active {
+  border-bottom: 1px solid #2a2a2a;
+
+}
+
+/*@media (orientation : landscape) {
+
+  div #information {
+  z-index: 2;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  overflow: hidden; 
+  opacity: 0;
+  align-items: center;
+  grid-area: 1/1;
+  
+}
+
+div #information h2 {
+  font-size: 3.0em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+div #information h1 {
+    margin: 0;
+}
+div #information.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+div #information button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    margin: 1em 10em;
+    background-color: rgba(255,255,255,0.3);
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 16px 0px 16px 0px;
+    border-bottom: 3px solid #2a2a2a;
+}
+
+div #information button:active {
+  border-bottom: 1px solid #2a2a2a;
+
+}
+*/
+
+
+
+/* --------------- TEXT INFORMATION PAGE ---------------- */
+h2.location {
+	font-size: 3vw;
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1vw 0vw;
+}
+
+h1.index {
+	font-size: 8vw;
+  font-weight: 500;
+  text-align: center;
+  margin: 1vw 0vw;
+}
+
+h2.comment {
+	font-size: 3vw;
+  font-weight: 400;
+  text-align: center;
+  margin: 1vw 0vw;
+}
+
+hr {
+	margin: 1em 0 1em 0;
+  visibility: visible;
+}
+
+div.moreData {
+	margin: 2em 0 1em 0;
+}
+
+h3.update {
+  margin:0;
+  text-align: center;
+  padding-top: 1em;
+  font-weight: 300;
+}
+
+td.png img {
+  width: 10vw;
+}
+/* --------------- FOOTER ---------------- */
+
+/* --------------- MEDIA QUERIES ---------------- */
+
+@media (orientation:landscape) {
+
+  div #information {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    
+  }
+
+  hr {
+  visibility: hidden;
+}
+
+  div #information :nth-child(1) 
+  {
+    order: 1;
+    flex:1 0 50%;
+  }
+  div #information :nth-child(2) 
+  {
+    order: 3;
+    flex:1 0 50%;
+  }
+  div #information :nth-child(3) 
+  {
+    order: 2;
+    flex:1 0 50%;
+  }
+  div #information :nth-child(4) 
+  {
+    order: 4;
+    flex:1 0 50%;
+  }
+  div #information :nth-child(5) 
+  {
+    order: 5;
+    flex:1 0 100%;
+  }
+  div #information :nth-child(6) 
+  {
+    order: 6;
+    flex:1 0 auto;
+  }
+
+}
+
+
