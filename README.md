@@ -8,7 +8,7 @@
 - [Description](#description)
 - [How To Use](#how-to-use)
 - [References](#references)
-- [License](#license)
+- [What I've Learned](#what-i've-learned)
 - [About Me](#about-me)
 
 ---
@@ -64,6 +64,18 @@ You need to add your APIs token to .env file, here's a snippet with .env sample:
 ![Home Page](src/img/home.png)
 
 ![Data Page](src/img/isWorking.png)
+
+---
+
+## What i've learned
+
+
+Deveolping this project i had a chance to improve my JS skills and learn how to implement external frameworks or tools. 
+More in depth i've implemented JQuery to "switching pages" with event handler and css classes.
+
+Later i made an extensive use of css to provide a better user experience enhacing the user interface, and made it responsive.
+
+Finally I implemented Webpack to deploy the entire app, learning how Webpack works and how to implement loaders and plugins.
 
 ---
 
